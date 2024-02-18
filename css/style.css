@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Patua+One&amp;display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:200,300,400,500,600,700,900&amp;display=swap');
+:root {
+	--black: #000000;
+	--red: red;
+	--white: white;
+	--font-family-Patua: 'Patua One', cursive;
+	--font-family-noto: 'Noto Serif JP', serif;
+ 
+}
+body {
+	color: var(--black);
+	font-family: "メイリオ",Meiryo,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","ＭＳ Ｐゴシック","Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+}
+
+h1,h2, h3, h4,h5,h6
+{
+	width: 100%;
+	margin: 0; 
+	padding: 0;
+}
+
+ul,
+ol
+{
+	list-style: none;
+}
+/*images*/
+img {
+	display: block;
+	width: 100%; height: auto;
+	margin: 0; padding: 0;
+}
+/*font style*/
+.underline {text-decoration: underline;}
+.italic { font-style: italic;}
+.justify { text-align: justify;}
+/*font indents*/
+.indent-10 { text-indent: 10px;}
+.indent-20 { text-indent: 20px;}
+
+.line-btm-30:after {
+	content: "";
+	display: block;
+	width: 30%; height: 3px;
+	background-color: var(--red);
+	margin: 0 auto 0 auto; padding: 0;
+} 
+
+/*font size*/
+.jpn, .eng {
+	display: block;
+	width: 100%; height: auto;
+	margin: 0; padding: 0;
+	font-family: var(--font-family-noto);
+}
+@media (max-width: 767px){
+	.normal-size {
+		font-size: 14px; line-height: 25px;		
+	}
+	p { font-size: 14px; line-height: 25px;}
+}
+
+@media (min-width: 768px){
+	.normal-size {
+		font-size: 16px; line-height: 30px;
+	}
+	p { font-size: 14px; line-height: 30px;}
+}
+
+
+/*go to top btn*/
+.go2top {
+	position: fixed; bottom: 15px; right: 15px;
+	width: 50px;height: 50px;
+	background-color: var(--black); color: var(--white);
+	border: 1px solid var(--white);
+	cursor: pointer;
+	z-index:4;
+	margin: 0; padding: 0;
+}
+.go2top:before{
+	content: "\e90f";
+	display: block;
+	width: 30px; height: 30px; line-height: 30px;
+	font-size: 1.75em; text-align: center;
+	font-family: 'kst-' !important;
+	margin: 10px; padding: 0;
+}
+.go2top:hover {
+	background-color: var(--red);
+}
+/*margin*/
+
+
+
